@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="MarkdownProjectSettings" wasCopied="false">
     <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="true" replaceUnicodeEmoji="false" lastLayoutSetsDefault="false">
-=======
-  <component name="MarkdownProjectSettings">
-    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="true">
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
       <PanelProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.panel" providerName="Default - Swing" />
       </PanelProvider>
     </PreviewSettings>
-<<<<<<< HEAD
-    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="0" emojiImages="0">
-=======
-    <ParserSettings gitHubSyntaxChange="false">
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
+    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="1" emojiImages="0">
       <PegdownExtensions>
         <option name="ABBREVIATIONS" value="false" />
         <option name="ANCHORLINKS" value="true" />
@@ -43,23 +34,16 @@
         <option name="WIKILINKS" value="true" />
       </PegdownExtensions>
       <ParserOptions>
-<<<<<<< HEAD
         <option name="ADMONITION_EXT" value="false" />
         <option name="ATTRIBUTES_EXT" value="false" />
         <option name="COMMONMARK_LISTS" value="true" />
         <option name="DUMMY" value="false" />
         <option name="EMOJI_SHORTCUTS" value="true" />
         <option name="ENUMERATED_REFERENCES_EXT" value="false" />
-=======
-        <option name="COMMONMARK_LISTS" value="true" />
-        <option name="DUMMY" value="false" />
-        <option name="EMOJI_SHORTCUTS" value="true" />
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
         <option name="FLEXMARK_FRONT_MATTER" value="false" />
         <option name="GFM_LOOSE_BLANK_LINE_AFTER_ITEM_PARA" value="false" />
         <option name="GFM_TABLE_RENDERING" value="true" />
         <option name="GITBOOK_URL_ENCODING" value="false" />
-<<<<<<< HEAD
         <option name="GITHUB_LISTS" value="false" />
         <option name="GITHUB_WIKI_LINKS" value="true" />
         <option name="HEADER_ID_NO_DUPED_DASHES" value="false" />
@@ -70,16 +54,6 @@
       </ParserOptions>
     </ParserSettings>
     <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false" imageUriSerials="false">
-=======
-        <option name="GITHUB_EMOJI_URL" value="false" />
-        <option name="GITHUB_LISTS" value="false" />
-        <option name="GITHUB_WIKI_LINKS" value="true" />
-        <option name="JEKYLL_FRONT_MATTER" value="false" />
-        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
-      </ParserOptions>
-    </ParserSettings>
-    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false">
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
       <GeneratorProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.generator" providerName="Default Swing HTML Generator" />
       </GeneratorProvider>
@@ -88,22 +62,15 @@
       <bodyTop />
       <bodyBottom />
     </HtmlSettings>
-<<<<<<< HEAD
-    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="false" isCssTextEnabled="false" isDynamicPageWidth="true">
-=======
-    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssTextEnabled="false" isDynamicPageWidth="true">
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
       <StylesheetProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
       </StylesheetProvider>
       <ScriptProviders />
       <cssText />
-<<<<<<< HEAD
       <cssUriHistory />
-=======
->>>>>>> 0686c8402626ba7ac3fa0cedab2d086e4e48b933
     </CssSettings>
-    <HtmlExportSettings updateOnSave="false" parentDir="$ProjectFileDir$" targetDir="$ProjectFileDir$" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
     <LinkMapSettings>
       <textMaps />
     </LinkMapSettings>
