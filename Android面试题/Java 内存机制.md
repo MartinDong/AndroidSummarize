@@ -52,3 +52,67 @@ int i = 1；
 - 保证有序性
 - 保证可见性
 当使用 Volatile 修饰共享变量的时候，线程访问到该变量时候都会去主存中获取变量的值，它的工作内存中的缓存将失效，这样就保证了每个线程访问该变量的时候都是从主存中读写的。这就是使用 Volatile 关键字来修饰线程间共享变量的原因。
+
+# 拓展面试
+## 对于字符串，其对象的引用都是存储在栈中。
+- 如果是编译期已经创建好的（直接使用双引号声明的）就存储在常量池中。
+- 如果是运行期（new 出来的）存储在堆中
+- 对于 equals 相等的字符串，在常量池中永远只有一份，在堆中有多份。
+```java
+String s1 = "china";
+String s2 = "china";
+String s3 = "china";
+
+String ss1 = new String("china");
+String ss2 = new String("china");
+String ss3 = new String("china");
+```
+![String 内存模型]($resource/908514-20160720101024841-238269977.jpg)
+Java 中 String 的内存模型比较特殊，使用 new 创建一个字符串『ABC』的时候，会先去常量池中查找是否已经有了『ABC』对象，如果没有则在常量池中创建一个『ABC』对象，然后堆中再创建一个常量池中『ABC』对象的拷贝对象。
+
+**问：```String str=new String("ABC");``` 产生几个对象？**
+**答： 如果常量池中原来没有"ABC"即，创建两个，如果有，则创建一个；**
+
+## **成员变量和局部变量在内存中的分配**
+- 成员变量就是方法外部，类内部定定义的变量；
+- 局部变量就是方法或语句块内部定义的变量；
+- 局部变量必须初始化，方法的形参也是局部变量，局部变量的数据存在栈内存中；
+- 栈内存中的局部变量随着方法的小时而消失；
+- 成员变量存储在堆中的对象里面，由垃圾回收器 GC 负责回收；
+```java
+class BirthDate{
+  private int day;
+  private int month;
+  private int year;
+
+  public BirthDate(int d,int m,int y){
+     day = d;
+     month = m;
+     year = y;
+  }
+}
+
+public class Test{
+  public void change(int i){
+    i = 1122;
+  }
+
+  public static void main(String args[]){
+    int date = 9;
+    Test test = new Test();
+    test.change(date);
+    BirthDate d1 = new BirthDate(9,9,1999);
+  }
+}
+```
+分析上面代码：
+- date 为局部变量，i、d、m、y 都是形参同为局部变量，day、month、year 为成员变量。
+  - main 方法开始执行：int date = 9；date 为局部变量，基础类型，引用和值都存在栈中；
+  - Test test = new Test()；test 为对象的引用，存在栈中，对象 new Test() 存在堆中；
+    - **这里需要注意的是调用 test.change(date)；是值传递；**
+  - BirthDate d1 = new BirthDate(9，9，1999)；
+    - d1 为对象引用，存在栈中，对象 new BirthDate() 存在堆中，它的构造函数中的 d、m、y 均为局部变量存储在栈中，且它们的类型为基础类型，因此他们的数据也存储在栈中。
+    - day、month、year 均为成员变量，他们存储在堆中 new BirthDate() 里面，当 BirthDate 构造方法执行完之后，d、m、y 也将从栈中消失；
+  - main 方法执行完之后，date 变量，test，d1 引用将从栈中消失，new Test()，new BirthDate()将等待垃圾回收；
+![20190330153004]($resource/20190330153004.png)
+

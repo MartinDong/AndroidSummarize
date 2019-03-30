@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MemberOrLocal",
+            "request": "launch",
+            "mainClass": "DevelopDemo.MemberOrLocal",
+            "projectName": "Code_bdb9a229"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringTest",
+            "request": "launch",
+            "mainClass": "DevelopDemo.StringTest",
+            "projectName": "Code_bdb9a229"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LinkedNode",
             "request": "launch",
             "mainClass": "DevelopDemo.LinkedNode",
