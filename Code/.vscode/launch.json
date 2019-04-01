@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SoftReferenceDemo",
+            "request": "launch",
+            "mainClass": "DevelopDemo.SoftReferenceDemo",
+            "projectName": "Code_bdb9a229"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WeakReferenceDemo",
+            "request": "launch",
+            "mainClass": "DevelopDemo.WeakReferenceDemo",
+            "projectName": "Code_bdb9a229"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MemberOrLocal",
             "request": "launch",
             "mainClass": "DevelopDemo.MemberOrLocal",
