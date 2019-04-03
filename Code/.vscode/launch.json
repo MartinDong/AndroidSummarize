@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SelectSort",
+            "request": "launch",
+            "mainClass": "DevelopDemo.SortMethod.SelectSort",
+            "projectName": "Code_bdb9a229"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MergeArray",
             "request": "launch",
             "mainClass": "DevelopDemo.SortMethod.MergeArray",
